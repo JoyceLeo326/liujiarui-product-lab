@@ -57,7 +57,7 @@
     "name": "AI 路线规划",
     "repo": "meituan-ai-route-planner",
     "github": "https://github.com/JoyceLeo326/meituan-ai-route-planner",
-    "sourceVisibility": "public",
+    "sourceVisibility": "private",
     "primaryUrl": "https://joyceleo326.github.io/meituan-ai-route-planner/",
     "backupUrl": "",
     "status": "live",
