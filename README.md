@@ -15,7 +15,10 @@ npx serve .
 ```bash
 npm test
 npm run check
+npm run audit:live
 ```
+
+`audit:live` 会逐一访问目录中的正式入口，只输出状态、耗时和错误类型；若页面不可达、依赖受限的远程运行时资源，或出现凭据形态内容，命令会失败且不会回显命中值。
 
 ## 内容边界
 

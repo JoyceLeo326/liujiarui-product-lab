@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --test && node --check app.js && node --check sw.js"
+    "check": "node --test && node --check app.js && node --check sw.js && node --check scripts/release-audit.mjs",
+    "audit:live": "node scripts/release-audit.mjs"
   }
 }
