@@ -1,0 +1,218 @@
+[
+  {
+    "name": "食刻拍档",
+    "repo": "meituan-mealmate-ai-demo",
+    "github": "https://github.com/JoyceLeo326/meituan-mealmate-ai-demo",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/meituan-mealmate-ai-demo/",
+    "backupUrl": "https://meituan-mealmate-ai-demo.vercel.app/",
+    "status": "live",
+    "stage": "群体决策",
+    "summary": "把四个人的预算、忌口、口味与校区约束，收束成一张每个人都能解释和确认的拼单方案。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["群体决策", "即时服务", "完整故事"],
+    "story": {
+      "person": "午休只剩二十分钟的四人小组",
+      "conflict": "预算、忌口与口味无法同时由热门方案满足",
+      "outcome": "得到可确认、可撤回、可执行的四人拼单"
+    }
+  },
+  {
+    "name": "情感计算研究路径",
+    "repo": "affective-computing-research",
+    "github": "https://github.com/JoyceLeo326/affective-computing-research",
+    "sourceVisibility": "private",
+    "primaryUrl": "./research/affective-computing/",
+    "backupUrl": "",
+    "status": "research",
+    "stage": "研究训练",
+    "summary": "把论文阅读、基线复现、实验记录与阶段复盘组织成一条不伪造结果的科研成长路线。",
+    "roles": ["recruiter", "judge", "collaborator"],
+    "tags": ["情感计算", "可复现", "学习路径"],
+    "story": {
+      "person": "准备进入情感计算方向的本科生",
+      "conflict": "论文、代码和实验很多，却无法判断下一步最值得验证什么",
+      "outcome": "得到带证据、状态与复盘入口的研究路线"
+    }
+  },
+  {
+    "name": "文径",
+    "repo": "literature-workbench",
+    "github": "https://github.com/JoyceLeo326/literature-workbench",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/literature-workbench/",
+    "backupUrl": "https://literature-workbench.vercel.app/",
+    "status": "live",
+    "stage": "研究交付",
+    "summary": "从研究边界、检索式、题录到筛选、综合与质量检查，形成可回到原文的文献交付。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["文献研究", "证据链", "真实导出"],
+    "story": {
+      "person": "面对大量来源和紧迫截止日的研究者",
+      "conflict": "覆盖面、质量与交付时间彼此拉扯",
+      "outcome": "得到可追溯的目录、综合稿和质量报告"
+    }
+  },
+  {
+    "name": "AI 路线规划",
+    "repo": "meituan-ai-route-planner",
+    "github": "https://github.com/JoyceLeo326/meituan-ai-route-planner",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/meituan-ai-route-planner/",
+    "backupUrl": "",
+    "status": "live",
+    "stage": "城市出行",
+    "summary": "让旅行者在时间、预算、兴趣、同行者和移动能力之间做出可解释的路线取舍。",
+    "roles": ["recruiter", "judge", "user"],
+    "tags": ["路线", "约束决策", "地图"],
+    "story": {
+      "person": "只有半天时间、同行者节奏不同的旅行者",
+      "conflict": "热门景点、路程、预算与体力不能全部最大化",
+      "outcome": "得到可调整并能真正照着走的城市路线"
+    }
+  },
+  {
+    "name": "AI 时代个人说明书",
+    "repo": "liujiarui-ai-manual",
+    "github": "https://github.com/JoyceLeo326/liujiarui-ai-manual",
+    "sourceVisibility": "private",
+    "primaryUrl": "./mirrors/liujiarui-ai-manual/",
+    "backupUrl": "https://liujiarui-ai-manual.vercel.app/",
+    "status": "live",
+    "stage": "个人协作",
+    "summary": "把个人优势、工作方式、协作边界与真实项目证据整理成可被团队使用的说明书。",
+    "roles": ["recruiter", "judge", "collaborator"],
+    "tags": ["个人品牌", "协作", "能力证据"],
+    "story": {
+      "person": "第一次与刘佳锐协作的同学、老师或团队",
+      "conflict": "简历能列经历，却很难说明怎样配合才能把事情做好",
+      "outcome": "得到按场景查看的协作方式与项目证据"
+    }
+  },
+  {
+    "name": "乡村教师助手",
+    "repo": "rural-teacher-assistant-deploy",
+    "github": "https://github.com/JoyceLeo326/rural-teacher-assistant-deploy",
+    "sourceVisibility": "private",
+    "primaryUrl": "https://joyceleo326.github.io/rural-teacher-assistant-deploy/",
+    "backupUrl": "",
+    "status": "live",
+    "stage": "教学现场",
+    "summary": "围绕年级、班情、设备与时间限制，帮助教师完成备课、课堂活动、练习和反馈。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["教育", "低资源场景", "课堂交付"],
+    "story": {
+      "person": "设备有限、明天就要上课的乡村教师",
+      "conflict": "教学目标、班级差异与有限资源同时存在",
+      "outcome": "得到能直接使用并继续调整的教案和练习"
+    }
+  },
+  {
+    "name": "健康守护者",
+    "repo": "JianKangShouHuZhe",
+    "github": "https://github.com/JoyceLeo326/JianKangShouHuZhe",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/JianKangShouHuZhe/",
+    "backupUrl": "",
+    "status": "live",
+    "stage": "康复记录",
+    "summary": "让使用者记录手部康复任务、识别红旗风险、复盘趋势，并把可靠信息带给专业人员。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["健康安全", "趋势", "人工复核"],
+    "story": {
+      "person": "正在进行手部康复、担心训练是否安全的人",
+      "conflict": "想持续训练，却可能遗漏需要专业评估的风险信号",
+      "outcome": "得到带安全门禁和可分享记录的康复时间线"
+    }
+  },
+  {
+    "name": "FlowCut AI Studio",
+    "repo": "flowcut-ai-studio",
+    "github": "https://github.com/JoyceLeo326/flowcut-ai-studio",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/flowcut-ai-studio/",
+    "backupUrl": "https://flowcut-ai-studio.vercel.app/projects",
+    "status": "live",
+    "stage": "视频交付",
+    "summary": "从素材审阅、节奏判断、剪辑计划到交付检查，让创作者保留每一次取舍的来路。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["视频", "剪辑决策", "版本"],
+    "story": {
+      "person": "面对大量素材和多个平台规格的视频创作者",
+      "conflict": "故事完整、节奏、时长与品牌要求互相牵制",
+      "outcome": "得到可回溯的剪辑计划与交付清单"
+    }
+  },
+  {
+    "name": "创剧 AI",
+    "repo": "workflow",
+    "github": "https://github.com/JoyceLeo326/workflow",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/workflow/",
+    "backupUrl": "https://chuangju-ai.vercel.app/",
+    "status": "live",
+    "stage": "故事改编",
+    "summary": "把原著证据、人物弧光、分集、场景和台词纳入同一条连续性可追踪的改编流程。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["剧本", "连续性", "多格式导出"],
+    "story": {
+      "person": "需要把长篇原著改成剧集的编剧团队",
+      "conflict": "戏剧节奏、人物一致性与原著忠实度无法自动兼得",
+      "outcome": "得到可恢复版本并可真正导出的剧本工程"
+    }
+  },
+  {
+    "name": "做成■",
+    "repo": "zuocheng-ai-workflow",
+    "github": "https://github.com/JoyceLeo326/zuocheng-ai-workflow",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/zuocheng-ai-workflow/",
+    "backupUrl": "https://zuocheng-ai-workflow.vercel.app/",
+    "status": "live",
+    "stage": "学习交付",
+    "summary": "把模糊待办、零散资料与交付标准，转成一套有证据、有检查、有真实文件的完成路径。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["学习工作流", "证据", "交付"],
+    "story": {
+      "person": "截止日前面对一堆资料却不知道怎样开始的学生",
+      "conflict": "速度、完整性与证据可靠性同时要求",
+      "outcome": "得到经过校验且可以直接提交的成品"
+    }
+  },
+  {
+    "name": "轻气候 · AI 饮品创新引擎",
+    "repo": "yuanqi-ai-innovation-engine",
+    "github": "https://github.com/JoyceLeo326/yuanqi-ai-innovation-engine",
+    "sourceVisibility": "private",
+    "primaryUrl": "./mirrors/yuanqi-ai-innovation-engine/",
+    "backupUrl": "https://yuanqi-ai-innovation-engine.vercel.app/",
+    "status": "live",
+    "stage": "新品创新",
+    "summary": "用趋势证据、候选概念、双阶段验证和组织回流，推动一款饮品从机会到立项建议。",
+    "roles": ["recruiter", "judge", "collaborator"],
+    "tags": ["多角色", "证据门禁", "版本回流"],
+    "story": {
+      "person": "需要在多个新品方向中做立项判断的创新团队",
+      "conflict": "趋势热度、用户吸引力、研发风险与品牌适配并不一致",
+      "outcome": "得到带证据边界和下一步任务的立项建议"
+    }
+  },
+  {
+    "name": "误会博物馆",
+    "repo": "misunderstanding-museum",
+    "github": "https://github.com/JoyceLeo326/misunderstanding-museum",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/misunderstanding-museum/",
+    "backupUrl": "https://misunderstanding-museum.vercel.app/",
+    "status": "live",
+    "stage": "跨文化表达",
+    "summary": "从一句被误解的话出发，比较语境、意图与文化差异，并把个人经历变成可策展的公共内容。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["跨文化", "互动叙事", "UGC"],
+    "story": {
+      "person": "在另一种语言或文化里被一句话绊住的人",
+      "conflict": "字面意思、说话意图和接收者经验出现偏差",
+      "outcome": "得到多视角解释，并能贡献自己的误会展品"
+    }
+  }
+]
