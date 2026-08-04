@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#131a2e">
+  <meta name="description" content="按身份、目标与障碍生成个性化情感计算研究路线，并在模态诊断台中观察融合与缺失模态。">
+  <link rel="canonical" href="https://joyceleo326.github.io/liujiarui-product-lab/research/affective-computing/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:site_name" content="情绪信号研究所">
+  <meta property="og:title" content="情绪信号研究所｜情感计算研究旅程">
+  <meta property="og:description" content="生成个性化五步研究路线，并亲手观察多模态冲突与缺失如何改变融合判断。">
+  <meta property="og:url" content="https://joyceleo326.github.io/liujiarui-product-lab/research/affective-computing/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="情绪信号研究所｜情感计算研究旅程">
+  <meta name="twitter:description" content="从好奇心出发，把情绪信号变成可复查的研究证据。">
+  <title>情绪信号研究所｜Affective Computing Research Journey</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="情绪信号研究所首页">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>情绪信号研究所</strong><small>AFFECTIVE COMPUTING LAB</small></span>
+    </a>
+    <nav aria-label="页面导航">
+      <a href="#journey">研究旅程</a>
+      <a href="#route">五步路线</a>
+      <a href="#lab">模态诊断</a>
+    </nav>
+    <a class="header-action" href="#planner">生成我的路线</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> MULTIMODAL · EVIDENCE · REPRODUCTION</p>
+        <h1>别只追模型。<br><em>追踪情绪信号</em>如何变成证据。</h1>
+        <p class="hero-lead">从文本、音频与视觉的冲突出发，建立一条能解释、能复跑、也能被反驳的研究路线。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#planner">开始规划 <span aria-hidden="true">↘</span></a>
+          <a class="button button-ghost" href="#lab">先做一次模态诊断</a>
+        </div>
+        <ul class="signal-legend" aria-label="三种情绪信号">
+          <li><i class="signal text"></i><span>文本</span><strong>语义与立场</strong></li>
+          <li><i class="signal audio"></i><span>音频</span><strong>韵律与强度</strong></li>
+          <li><i class="signal visual"></i><span>视觉</span><strong>表情与动作</strong></li>
+        </ul>
+      </div>
+      <div class="hero-visual" aria-label="多模态信号进入研究判断的示意图">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="signal-node node-text"><span>T</span><small>TEXT</small><b data-hero-text>0.72</b></div>
+        <div class="signal-node node-audio"><span>A</span><small>AUDIO</small><b data-hero-audio>0.58</b></div>
+        <div class="signal-node node-visual"><span>V</span><small>VISUAL</small><b data-hero-visual>0.64</b></div>
+        <div class="core-node"><small>RESEARCH<br>QUESTION</small><strong>?</strong><p>哪一种信号<br>正在主导判断</p></div>
+        <div class="trace trace-one"></div><div class="trace trace-two"></div><div class="trace trace-three"></div>
+      </div>
+    </section>
+
+    <section class="planner-section" id="planner">
+      <div class="section-intro">
+        <p class="eyebrow">01 · DEFINE YOUR FIELDWORK</p>
+        <h2>先告诉我们，<br>你站在研究的哪一段。</h2>
+        <p>身份决定起点，目标决定交付，障碍决定本周第一场硬仗。</p>
+      </div>
+      <form class="planner" data-route-form>
+        <div class="field">
+          <label for="role">你现在更像</label>
+          <select id="role" name="role">
+            <option value="beginner">领域初学者</option>
+            <option value="reproducer">复现实践者</option>
+            <option value="researcher">研究探索者</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="goal">这轮最想完成</label>
+          <select id="goal" name="goal">
+            <option value="understand">理解核心机制</option>
+            <option value="baseline">跑通可靠基线</option>
+            <option value="question">形成研究问题</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="obstacle">目前最卡你的</label>
+          <select id="obstacle" name="obstacle">
+            <option value="math">公式与形状</option>
+            <option value="papers">论文脉络</option>
+            <option value="code">代码与复现</option>
+          </select>
+        </div>
+        <div class="field hours-field">
+          <label for="weekly-hours">每周可投入 <output data-hours-output for="weekly-hours">5 小时</output></label>
+          <input id="weekly-hours" name="weeklyHours" type="range" min="2" max="20" step="1" value="5">
+          <div class="range-labels"><span>2h</span><span>20h</span></div>
+        </div>
+        <button class="button button-primary" type="submit">更新研究路线 <span aria-hidden="true">→</span></button>
+      </form>
+    </section>
+
+    <section class="story-section" id="journey" aria-labelledby="journey-title">
+      <div class="story-heading">
+        <div><p class="eyebrow">02 · YOUR RESEARCH STORY</p><h2 id="journey-title">一条路线，也是一场选择。</h2></div>
+        <p data-route-headline>先建立可解释的任务地图，最终能用自己的话解释对齐、融合与模态不平衡。</p>
+      </div>
+      <div class="story-grid" data-story aria-live="polite"></div>
+    </section>
+
+    <section class="route-section" id="route" aria-labelledby="route-title">
+      <div class="route-heading">
+        <div><p class="eyebrow">03 · FIVE CHECKPOINTS</p><h2 id="route-title">你的五步研究路线</h2></div>
+        <div class="route-tools">
+          <span class="progress-copy"><b data-progress-count>0</b> / 5 已完成</span>
+          <button class="button button-light" type="button" data-download>导出研究路线</button>
+        </div>
+      </div>
+      <div class="route-list" data-route aria-live="polite"></div>
+    </section>
+
+    <section class="lab-section" id="lab" aria-labelledby="lab-title">
+      <div class="lab-copy">
+        <p class="eyebrow">04 · MODALITY DIAGNOSTIC</p>
+        <h2 id="lab-title">同一句“我没事”，<br>三个模态可能讲三种故事。</h2>
+        <p>拖动信号强度，或临时关闭一个模态，观察可靠性加权后的情绪判断如何变化。这里不替你下结论，它只把“谁在影响判断”摊开。</p>
+        <div class="lab-principle"><span>研究提示</span><strong>高置信不等于真实。先问模型凭什么相信它。</strong></div>
+      </div>
+      <div class="lab-console">
+        <div class="console-head"><span>SESSION / 01</span><strong>模态冲突诊断</strong><i aria-hidden="true"></i></div>
+        <form data-modality-form>
+          <div class="modality-row" data-modality="text">
+            <div><span class="modality-code">T</span><label for="text-score">文本语义</label></div>
+            <input id="text-score" name="text" type="range" min="0" max="100" value="72">
+            <output for="text-score">72</output>
+            <label class="switch"><input type="checkbox" name="textMissing"><span></span><small>缺失</small></label>
+          </div>
+          <div class="modality-row" data-modality="audio">
+            <div><span class="modality-code">A</span><label for="audio-score">音频韵律</label></div>
+            <input id="audio-score" name="audio" type="range" min="0" max="100" value="58">
+            <output for="audio-score">58</output>
+            <label class="switch"><input type="checkbox" name="audioMissing"><span></span><small>缺失</small></label>
+          </div>
+          <div class="modality-row" data-modality="visual">
+            <div><span class="modality-code">V</span><label for="visual-score">视觉动作</label></div>
+            <input id="visual-score" name="visual" type="range" min="0" max="100" value="64">
+            <output for="visual-score">64</output>
+            <label class="switch"><input type="checkbox" name="visualMissing"><span></span><small>缺失</small></label>
+          </div>
+        </form>
+        <div class="fusion-result" aria-live="polite">
+          <div class="fusion-score"><span>FUSED SIGNAL</span><strong data-fusion-score>65</strong><small>/ 100</small></div>
+          <div><span class="result-label" data-fusion-label>信号偏积极，但存在模态分歧</span><p data-fusion-insight>文本给出较强积极线索；仍需核对音频和视觉为何更保守。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles-section" aria-labelledby="principles-title">
+      <div><p class="eyebrow">05 · EVIDENCE BEFORE CLAIMS</p><h2 id="principles-title">研究不是漂亮的曲线。<br>是每一步都能回来重走。</h2></div>
+      <ol>
+        <li><span>01</span><div><strong>观察与推断分开</strong><p>先写数据发生了什么，再写你认为为什么。</p></div></li>
+        <li><span>02</span><div><strong>失败样本也留下</strong><p>它们往往比平均指标更接近下一个问题。</p></div></li>
+        <li><span>03</span><div><strong>复跑之后再谈复现</strong><p>环境、切分、种子、指标与命令缺一不可。</p></div></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>情绪信号研究所</strong><small>AFFECTIVE COMPUTING RESEARCH JOURNEY</small></span></div>
+    <p>从一个可检查的问题开始，把好奇心变成证据。</p>
+    <a href="#top">回到顶部 ↑</a>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite" hidden></div>
+  <script src="./route-core.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

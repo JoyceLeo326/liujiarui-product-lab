@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "kind": "compiled-static-experience",
+  "entry": "index.html",
+  "assetBase": "./",
+  "publicPath": "/liujiarui-product-lab/mirrors/yuanqi-ai-innovation-engine/",
+  "sourceVisibility": "private",
+  "includes": [
+    "compiled client application",
+    "local product and story media"
+  ],
+  "excludes": [
+    "source files",
+    "git history",
+    "environment files",
+    "server code",
+    "credentials"
+  ],
+  "files": [
+    {
+      "path": "assets/index-Cchu8pwF.js",
+      "bytes": 312145,
+      "sha256": "be00049ff4f2465f5a823f01026a811f325e8162c20a17f75a206cc0aa13aef2"
+    },
+    {
+      "path": "assets/index-J5mTsZkQ.css",
+      "bytes": 170301,
+      "sha256": "283156157fd38ffb0941baa43b34b3164320ddb6b40c2821676072236a1ad66f"
+    },
+    {
+      "path": "brand/yuanqi-forest-official-transparent.png",
+      "bytes": 7539,
+      "sha256": "90ed7919160b3afb9b3acc42b33f692f064587b7b076264dac67a1a4e80f4e79"
+    },
+    {
+      "path": "brand/yuanqi-forest-official-v2.png",
+      "bytes": 7451,
+      "sha256": "ff44d3ccc599292b1d375c50fce603f090eee29907204fbb87d69cb5fb7e306c"
+    },
+    {
+      "path": "brand/yuanqi-forest-official.png",
+      "bytes": 7451,
+      "sha256": "ff44d3ccc599292b1d375c50fce603f090eee29907204fbb87d69cb5fb7e306c"
+    },
+    {
+      "path": "campaign/lychee-hotpot-gathering.webp",
+      "bytes": 138352,
+      "sha256": "cf58ac66e6e4ec4c059d2678cd7fe866a70af9be5129a470c7c61b05cd544d19"
+    },
+    {
+      "path": "campaign/lychee-rainy-convenience.webp",
+      "bytes": 126464,
+      "sha256": "8541ffbd3d9cf87d356574808b102894c30e1028ea61348754a64bae7d0ef88f"
+    },
+    {
+      "path": "campaign/peach-city-terrace.webp",
+      "bytes": 198492,
+      "sha256": "dd7ac07e797f3707428b64c9b485c07c903cbdf3cb7e6a6bf49e9c7ccaaf9323"
+    },
+    {
+      "path": "campaign/peach-office-afternoon.webp",
+      "bytes": 136592,
+      "sha256": "43c8900e1ec3ddc5e6cb3708d8f0a44748789982299882c7ccde9b1213ff6ab6"
+    },
+    {
+      "path": "campaign/qingmei-post-workout.webp",
+      "bytes": 145404,
+      "sha256": "0d2292927803f4fa8744572ebc5ee952db1330759b186cd6714ce623ec6b8beb"
+    },
+    {
+      "path": "campaign/qingmei-transit-gate.webp",
+      "bytes": 233932,
+      "sha256": "2301651ee57e012b9ec8ef0e37074a54a8ed41226d2159a0e962c0e580171fef"
+    },
+    {
+      "path": "chapters/feishu-co-creation-table.webp",
+      "bytes": 127180,
+      "sha256": "e96de0b4bf009c24909313fa842cbc422135faa83f8def37ad3bfcef239ed088"
+    },
+    {
+      "path": "chapters/lychee-crystal-fruit.webp",
+      "bytes": 90712,
+      "sha256": "39306883edb619eec9e4be029ed1734789c80d563a1b58d074d39d3d9539ba05"
+    },
+    {
+      "path": "chapters/lychee-mint-rain.webp",
+      "bytes": 337948,
+      "sha256": "e4018f876729dc22037a4cd90cff6d6f47f31423d63c44df053f99ae11062a70"
+    },
+    {
+      "path": "chapters/lychee-night-market.webp",
+      "bytes": 137968,
+      "sha256": "47a4e4e212c90cafd1a278c90d8279f49dad6a7f81e4788cad5c02f6101c4390"
+    },
+    {
+      "path": "chapters/lychee-rain-neon.webp",
+      "bytes": 140134,
+      "sha256": "fa3104a1db32b03d2ec68513d0ff3752bbaadda6ae74f6cb3b1d184cec930790"
+    },
+    {
+      "path": "chapters/lychee-summer-cinema.webp",
+      "bytes": 124716,
+      "sha256": "39f32915d92228e5832777fd520535843182d17e12dccaec18063089cc126a3f"
+    },
+    {
+      "path": "chapters/multi-role-roundtable.webp",
+      "bytes": 167944,
+      "sha256": "987ab370dcf2b5af143d3f1183df24a749ae3e108865bee534ccf905de693d23"
+    },
+    {
+      "path": "chapters/peach-haze-window.webp",
+      "bytes": 62736,
+      "sha256": "1cccea864631e0988be5b5b98b946651add495381e4435422dadcd72951fc432"
+    },
+    {
+      "path": "chapters/peach-library-afternoon.webp",
+      "bytes": 75696,
+      "sha256": "b5696eff844ca7f161099aefbacbac18fb09d6561aa61b823e69e9e854daf7e3"
+    },
+    {
+      "path": "chapters/peach-oolong-texture.webp",
+      "bytes": 75860,
+      "sha256": "a9efe6af21044a9d9c322236588f68516e771efaf2b85b4d78ed8f9373c0887b"
+    },
+    {
+      "path": "chapters/peach-petal-tea-steam.webp",
+      "bytes": 99094,
+      "sha256": "126c30bc08ed7f72287896380fc247f3d05dbf837d071ac831c65bcbd5d17b86"
+    },
+    {
+      "path": "chapters/peach-train-window.webp",
+      "bytes": 93268,
+      "sha256": "721c0a701f7bda754025d97815c7fae5f74c0058726afa52a65240b6d037c338"
+    },
+    {
+      "path": "chapters/qingmei-bike-commute.webp",
+      "bytes": 234980,
+      "sha256": "c19f06bba94db0de6f50bcdb7bbf2b72b4ca0e64bd4cdf305ddc365fbdbf405d"
+    },
+    {
+      "path": "chapters/qingmei-orchard-macro.webp",
+      "bytes": 147636,
+      "sha256": "d71ca87ae39384ba40b2e2a65fa97a99201975dddfdc7246e93f38f5381e9c1f"
+    },
+    {
+      "path": "chapters/qingmei-rooftop-breeze.webp",
+      "bytes": 128058,
+      "sha256": "c0172ce3dc48e624bfddb62d9d4001ea3fc5829f1846d697a6489c8b9845d627"
+    },
+    {
+      "path": "chapters/qingmei-salt-bubbles.webp",
+      "bytes": 153162,
+      "sha256": "1d07084d08a162a0f2a33fccc280565fcb77c98964cc9dd917f7f3ca57f1b05d"
+    },
+    {
+      "path": "chapters/qingmei-sunlit-alley.webp",
+      "bytes": 112368,
+      "sha256": "5e6d3de6e32c3b5d29e321cc526847c775e80fb1f8993df771fa0e920211f830"
+    },
+    {
+      "path": "chapters/sensory-design-studio.webp",
+      "bytes": 89914,
+      "sha256": "b4fa1e0235a529bc3c5b33759dd3f401354886b6cbecf4061e6ea578921c3960"
+    },
+    {
+      "path": "chapters/shelf-choice-research.webp",
+      "bytes": 86174,
+      "sha256": "79dd584be6746432de5a7561a20c7f7a2a171ad4f4abfde0e59825b310fb4ed1"
+    },
+    {
+      "path": "chapters/tasting-note-wall.webp",
+      "bytes": 95918,
+      "sha256": "2933be2b0bc5c0551d7b2acd088fccb276bab5723f730c7796cddbebd83837ba"
+    },
+    {
+      "path": "concept-drinks-hero.png",
+      "bytes": 2240444,
+      "sha256": "e36fbdf8e0df60ac3490de2fc2ba8e328b9c84b3766347be5d603cd975d18943"
+    },
+    {
+      "path": "concept-drinks-hero.webp",
+      "bytes": 108590,
+      "sha256": "2e77f3c98f2ab4abd6b953824a56105a7a9e75bb6c131ab152bbfcd9b21f7ece"
+    },
+    {
+      "path": "details/lychee-macro.webp",
+      "bytes": 668864,
+      "sha256": "3d24e3d706bfd195e2e5e2ffc993d0590c6fe637c71deddefa42bc38fb437933"
+    },
+    {
+      "path": "details/peach-macro.webp",
+      "bytes": 372762,
+      "sha256": "1278d89d9ee77b9909b94d18bcd7247166da970c12b68f94d0046aa93ecd7ae1"
+    },
+    {
+      "path": "details/qingmei-macro.webp",
+      "bytes": 469626,
+      "sha256": "eb8e521fe13090fd50740f9ed2919e1b761d072d197e13c92527809f37ecf100"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1403,
+      "sha256": "51cb5f76cd878fdfda714dcf6e5164cd33dadaa3d79b81d6e2029749dad0d881"
+    },
+    {
+      "path": "jury/perspectives-decisions.webp",
+      "bytes": 203068,
+      "sha256": "0dd06d42468436e6e6838361e815f91687f955dd0d372545cde9cd191e692d16"
+    },
+    {
+      "path": "jury/perspectives-life.webp",
+      "bytes": 183842,
+      "sha256": "dbcf2205f9d50c7b594ce495228c37931bdadb0969efebc5c095178d9fd436e3"
+    },
+    {
+      "path": "jury/perspectives-operations.webp",
+      "bytes": 236944,
+      "sha256": "73ff1a5ba7ad4937e0ae9677b8b114afb824c5c88655ddffa557668418350e3f"
+    },
+    {
+      "path": "light-climate-atlas-v2.webp",
+      "bytes": 333796,
+      "sha256": "49d5d4d78eca27bb860450bb443fdb140fe40398f6e83aebe18ce25ed1192c9c"
+    },
+    {
+      "path": "products/lychee-family-v3-normalized.webp",
+      "bytes": 213336,
+      "sha256": "487ff2ab3ec73b83ee760cb1a8da427201e4af0fcf1c176a712d2bdea16aefb0"
+    },
+    {
+      "path": "products/peach-family-v3.webp",
+      "bytes": 134532,
+      "sha256": "2c2c51a7b4da40af0cd443e3fc5ebd6b2b0567c00cd51ce900fe5ab5db4a8b9c"
+    },
+    {
+      "path": "products/qingmei-family-v3.webp",
+      "bytes": 628908,
+      "sha256": "02c3802d1e00217fbcc0ec45e61dd9d9ef5589dbf1da10b7f0484693d7668685"
+    },
+    {
+      "path": "scenes/ai-jury-roundtable.webp",
+      "bytes": 102278,
+      "sha256": "2d65e9635e46ebc2007daf92821a7dc34855154033a49720ef4e1541679aa44e"
+    },
+    {
+      "path": "scenes/co-creation-studio.webp",
+      "bytes": 132054,
+      "sha256": "f80d623d88b2e36d29e7beaf2524c8690561ce709de3c9fe6a5acf346d9f1554"
+    },
+    {
+      "path": "scenes/consumer-tasting-workshop.webp",
+      "bytes": 150292,
+      "sha256": "d69eafccceb3520c5ac5698a89177df8590f3d2e3d527fca15df733c02736109"
+    },
+    {
+      "path": "scenes/convenience-fridge.webp",
+      "bytes": 209454,
+      "sha256": "892905f47d20fd6e7f92c10bd3e7b2df34f8137b3d1582f016a20e15699efff2"
+    },
+    {
+      "path": "scenes/light-climate-multipack.webp",
+      "bytes": 258344,
+      "sha256": "012d20b641882f83c65879a05e563f4fcc419d2444ade6bb83ef3e6421cf3e39"
+    },
+    {
+      "path": "scenes/package-material-board.webp",
+      "bytes": 326514,
+      "sha256": "42a1a6509236bb4d31127d1644b42d6f98a27dc7e66c554d195e35d774b316f7"
+    },
+    {
+      "path": "social/lychee-share.webp",
+      "bytes": 228402,
+      "sha256": "0d60d2dddc4c21346a2dca75bed91854f1053a13996cbe8413006eaf9a9fac47"
+    },
+    {
+      "path": "social/peach-share.webp",
+      "bytes": 228712,
+      "sha256": "068af69354a5d2fbdd6403f4105cf6349bbbc217136da261bcc445c2ee0624f0"
+    },
+    {
+      "path": "social/qingmei-share.webp",
+      "bytes": 216308,
+      "sha256": "4fb86e484ae9cd0d5690d713272a96952271f1070c06518c54bf77c9cb9e0006"
+    },
+    {
+      "path": "stories/lychee-hotpot.webp",
+      "bytes": 370852,
+      "sha256": "69add5bf8fd21f6b1155e14241ecfddf4343f5bdb04bdc88c75ee170d261dd35"
+    },
+    {
+      "path": "stories/peach-afternoon.webp",
+      "bytes": 60112,
+      "sha256": "cb319646e1a3cb92ee2e101e4d112d0450bedae94db78696189c63aa5e83c6ee"
+    },
+    {
+      "path": "stories/qingmei-commute.webp",
+      "bytes": 352476,
+      "sha256": "714abe5e8991ff5d2d52313858afbc96d6ab6d7778325b0deb80cbc36b0f8123"
+    },
+    {
+      "path": "trends/convenience-fridge-observation.webp",
+      "bytes": 203992,
+      "sha256": "86911d2428e1a4560c8281c33579ced57252750582b1590980014978690512ba"
+    },
+    {
+      "path": "trends/food-research-desk.webp",
+      "bytes": 463804,
+      "sha256": "6e748ff34f4b643d58de680d7008cbf2d3ebb0e86cab14cf326a2feff79e67c5"
+    },
+    {
+      "path": "trends/life-climate-collage.webp",
+      "bytes": 162758,
+      "sha256": "2e7faf5324b57b6ed07c91ec301c338bada22e6e876726a6520530607bb60971"
+    }
+  ]
+}

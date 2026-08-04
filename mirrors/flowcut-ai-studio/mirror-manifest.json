@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "interactive-static-compatibility-mode",
+  "entry": "index.html",
+  "assetBase": "./",
+  "publicPath": "/liujiarui-product-lab/mirrors/flowcut-ai-studio/",
+  "capabilities": [
+    "personalized edit mission",
+    "three material-grounded plans with trade-offs",
+    "confirmed contiguous timeline",
+    "Markdown edit sheet and JSON timeline downloads",
+    "local review backflow"
+  ],
+  "excludes": [
+    "environment files",
+    "server routes",
+    "AI provider credentials",
+    "private user media"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 10923,
+      "sha256": "9a4b602709403a54dc9082b3869d82c51f7385833d33cdff90c37ef5ce5296e5"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 25591,
+      "sha256": "d4c2bf7089a800fb10c64ec09b0b41008a029dc4121ff1ebf3d8d34e10c460bf"
+    },
+    {
+      "path": "app.js",
+      "bytes": 10292,
+      "sha256": "fa0a50c640030a75fc2e388127bf76333e2d6adcdf3a7792b8116dc04482702f"
+    },
+    {
+      "path": "experience.js",
+      "bytes": 10428,
+      "sha256": "2446ed1395796000f36868e4d2c66fc5900792c3f217f8fdc1af60f86d28eca8"
+    }
+  ]
+}

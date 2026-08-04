@@ -70,6 +70,7 @@ button:focus-visible, a:focus-visible {
   display: flex;
   gap: 10px;
   align-items: center;
+  min-height: 44px;
   font-weight: 800;
   text-decoration: none;
 }
@@ -79,9 +80,11 @@ button:focus-visible, a:focus-visible {
 nav { display: flex; gap: clamp(16px, 3vw, 42px); }
 
 nav a {
+  min-width: 44px;
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   color: var(--muted);
   font-size: .9rem;
   text-decoration: none;
