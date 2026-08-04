@@ -1,0 +1,9 @@
+{
+  "name": "刘佳锐 · AI 产品实验室",
+  "short_name": "产品实验室",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2ede3",
+  "theme_color": "#f2ede3",
+  "icons": [{ "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}
