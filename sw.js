@@ -1,5 +1,5 @@
-const CACHE_NAME = 'portfolio-lab-v2';
-const SHELL = ['./', './index.html', './styles.css', './app.js', './projects.json', './favicon.svg', './manifest.webmanifest'];
+const CACHE_NAME = 'portfolio-lab-v3';
+const SHELL = ['./', './index.html', './styles.css?v=3', './app.js', './projects.json', './favicon.svg', './manifest.webmanifest'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(SHELL)));

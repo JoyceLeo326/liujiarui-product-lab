@@ -54,9 +54,11 @@ test('mainland-first shell uses local assets, responsive controls, and offline c
   assert.match(html, /\.\/styles\.css/);
   assert.match(html, /Content-Security-Policy/);
   assert.match(css, /min-height:\s*44px/);
+  assert.match(css, /nav a \{[\s\S]*?min-width:\s*44px;[\s\S]*?min-height:\s*44px;/);
+  assert.match(css, /\.brand \{[\s\S]*?min-height:\s*44px;/);
   assert.match(css, /@media \(max-width:\s*768px\)/);
   assert.match(css, /prefers-reduced-motion/);
-  assert.match(sw, /portfolio-lab-v2/);
+  assert.match(sw, /portfolio-lab-v3/);
   assert.match(sw, /fetch\(event\.request\)[\s\S]*caches\.match\(event\.request\)/);
   assert.match(sw, /caches\.match/);
 });
