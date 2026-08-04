@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "kind": "interactive-static-compatibility-mode",
+  "entry": "index.html",
+  "assetBase": "./",
+  "publicPath": "/liujiarui-product-lab/mirrors/creative-ai/",
+  "capabilities": [
+    "personalized source brief",
+    "three traceable candidates with trade-offs",
+    "explicit confirmation",
+    "Markdown and JSON downloads",
+    "local feedback backflow"
+  ],
+  "excludes": [
+    "environment files",
+    "server routes",
+    "model credentials",
+    "private user data"
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "bytes": 10057,
+      "sha256": "746eeae233fec0aeb69bfcebcc3a0d61f2f733f53b293c263bc119cf8faad4a2"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 20558,
+      "sha256": "1560c928c71b649412b783b4078654f4c550c8fba7c3369563db5a506beb23e6"
+    },
+    {
+      "path": "app.js",
+      "bytes": 8149,
+      "sha256": "c6a110651f87927930a54da237a6e5cad2dfc59e39135872f75dd05fab062a0c"
+    },
+    {
+      "path": "experience.js",
+      "bytes": 9286,
+      "sha256": "8ddb8faa4e8d8b25cc0ceef647dae509ad85b72b0055bf1c7f2b61a6a1da97de"
+    }
+  ]
+}
