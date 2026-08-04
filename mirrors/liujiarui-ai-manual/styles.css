@@ -326,7 +326,8 @@ button {
 }
 
 .command-close {
-  width: 40px;
+  width: 44px;
+  min-height: 44px;
   aspect-ratio: 1;
   border: 1px solid var(--line);
   background: transparent;
@@ -353,6 +354,7 @@ button {
 
 .command-search-wrap input {
   width: 100%;
+  min-height: 44px;
   border: 0;
   outline: 0;
   background: transparent;
