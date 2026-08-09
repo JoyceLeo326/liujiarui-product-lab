@@ -1,4 +1,4 @@
-# 刘佳锐 · AI 产品实验室
+# Joyce Leo · AI 产品实验室
 
 ![AI 产品实验室：从具体的人出发，把不同问题做成可验证的产品](docs/readme-hero.png)
 
