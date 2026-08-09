@@ -46,6 +46,7 @@ test('project catalogue is truthful, excludes YISHU, and covers every substantiv
   assert.equal(byRepo['rural-teacher-assistant-deploy'].primaryUrl, 'https://rural-teacher-assistant-amber.vercel.app/');
   assert.equal(byRepo['rural-teacher-assistant-deploy'].status, 'live');
   assert.equal(byRepo['meituan-ai-route-planner'].status, 'unavailable');
+  assert.equal(byRepo['flowcut-ai-studio'].backupUrl, 'https://flowcut-ai-studio.vercel.app/');
   assert.equal(byRepo['yuanqi-ai-innovation-engine'].sourceVisibility, 'public');
 });
 
