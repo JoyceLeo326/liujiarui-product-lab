@@ -131,6 +131,8 @@ h1 em { color: var(--teal); font-style: normal; }
   font-size: clamp(1rem, 1.3vw, 1.2rem);
 }
 
+.hero-lede + .hero-lede { margin-top: -12px; }
+
 .primary-link {
   min-height: 48px;
   display: inline-flex;

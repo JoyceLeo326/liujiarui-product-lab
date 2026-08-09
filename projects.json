@@ -8,7 +8,7 @@
     "backupUrl": "https://meituan-mealmate-ai-demo.vercel.app/",
     "status": "live",
     "stage": "群体决策",
-    "summary": "把四个人的预算、忌口、口味与校区约束，收束成一张每个人都能解释和确认的拼单方案。",
+    "summary": "四个人都说“随便”，可预算、辣度和忌口都不一样；先把分歧说清，再一起定下一顿饭。",
     "roles": ["recruiter", "judge", "user", "collaborator"],
     "tags": ["群体决策", "即时服务", "完整故事"],
     "story": {
@@ -26,7 +26,7 @@
     "backupUrl": "",
     "status": "research",
     "stage": "研究训练",
-    "summary": "把论文阅读、基线复现、实验记录与阶段复盘组织成一条不伪造结果的科研成长路线。",
+    "summary": "第一次走进情感计算，论文和代码越看越多；这条路径帮学习者知道先验证什么、怎样留下证据。",
     "roles": ["recruiter", "judge", "collaborator"],
     "tags": ["情感计算", "可复现", "学习路径"],
     "story": {
@@ -44,7 +44,7 @@
     "backupUrl": "https://literature-workbench.vercel.app/",
     "status": "live",
     "stage": "研究交付",
-    "summary": "从研究边界、检索式、题录到筛选、综合与质量检查，形成可回到原文的文献交付。",
+    "summary": "研究者不该困在一堆 PDF 里；从问题边界到筛选、综合和检查，每一步都能回到原文。",
     "roles": ["recruiter", "judge", "user", "collaborator"],
     "tags": ["文献研究", "证据链", "真实导出"],
     "story": {
@@ -62,7 +62,7 @@
     "backupUrl": "",
     "status": "live",
     "stage": "城市出行",
-    "summary": "让旅行者在时间、预算、兴趣、同行者和移动能力之间做出可解释的路线取舍。",
+    "summary": "只有半天，两个人走路节奏还不同；比较三条有取舍的路线，再决定这座城今天怎么走。",
     "roles": ["recruiter", "judge", "user"],
     "tags": ["路线", "约束决策", "地图"],
     "story": {
@@ -80,11 +80,11 @@
     "backupUrl": "https://liujiarui-ai-manual.vercel.app/",
     "status": "live",
     "stage": "个人协作",
-    "summary": "把个人优势、工作方式、协作边界与真实项目证据整理成可被团队使用的说明书。",
+    "summary": "第一次一起做事，不必靠猜：从擅长什么、怎样沟通到哪些边界需要提前说清，都能按场景找到。",
     "roles": ["recruiter", "judge", "collaborator"],
     "tags": ["个人品牌", "协作", "能力证据"],
     "story": {
-      "person": "第一次与刘佳锐协作的同学、老师或团队",
+      "person": "第一次与 Joyce 协作的同学、老师或团队",
       "conflict": "简历能列经历，却很难说明怎样配合才能把事情做好",
       "outcome": "得到按场景查看的协作方式与项目证据"
     }
@@ -98,7 +98,7 @@
     "backupUrl": "",
     "status": "live",
     "stage": "教学现场",
-    "summary": "围绕年级、班情、设备与时间限制，帮助教师完成备课、课堂活动、练习和反馈。",
+    "summary": "设备不多，明天就要上课；老师从真实班情出发，拿到能带进教室、还能继续调整的教案和练习。",
     "roles": ["recruiter", "judge", "user", "collaborator"],
     "tags": ["教育", "低资源场景", "课堂交付"],
     "story": {
@@ -116,7 +116,7 @@
     "backupUrl": "",
     "status": "live",
     "stage": "康复记录",
-    "summary": "让使用者记录手部康复任务、识别红旗风险、复盘趋势，并把可靠信息带给专业人员。",
+    "summary": "今天练了什么、哪里不舒服、明天还该不该继续，都要留下清楚记录，也不能漏掉需要求助的信号。",
     "roles": ["recruiter", "judge", "user", "collaborator"],
     "tags": ["健康安全", "趋势", "人工复核"],
     "story": {
@@ -134,7 +134,7 @@
     "backupUrl": "https://flowcut-ai-studio.vercel.app/projects",
     "status": "live",
     "stage": "视频交付",
-    "summary": "从素材审阅、节奏判断、剪辑计划到交付检查，让创作者保留每一次取舍的来路。",
+    "summary": "素材堆满硬盘，平台规格又各不相同；先理清故事和节奏，再把每次剪辑取舍留到交付清单里。",
     "roles": ["recruiter", "judge", "user", "collaborator"],
     "tags": ["视频", "剪辑决策", "版本"],
     "story": {
@@ -152,7 +152,7 @@
     "backupUrl": "https://chuangju-ai.vercel.app/",
     "status": "live",
     "stage": "故事改编",
-    "summary": "把原著证据、人物弧光、分集、场景和台词纳入同一条连续性可追踪的改编流程。",
+    "summary": "长篇原著要变成剧集，节奏可以重写，人物却不能走丢；证据、分集、场景和台词沿同一条线推进。",
     "roles": ["recruiter", "judge", "user", "collaborator"],
     "tags": ["剧本", "连续性", "多格式导出"],
     "story": {
@@ -170,7 +170,7 @@
     "backupUrl": "https://zuocheng-ai-workflow.vercel.app/",
     "status": "live",
     "stage": "学习交付",
-    "summary": "把模糊待办、零散资料与交付标准，转成一套有证据、有检查、有真实文件的完成路径。",
+    "summary": "资料很多、截止日期很近，却不知道第一步做什么；把任务拆开、逐项检查，最后留下真的能提交的文件。",
     "roles": ["recruiter", "judge", "user", "collaborator"],
     "tags": ["学习工作流", "证据", "交付"],
     "story": {
@@ -188,7 +188,7 @@
     "backupUrl": "https://yuanqi-ai-innovation-engine.vercel.app/",
     "status": "live",
     "stage": "新品创新",
-    "summary": "用趋势证据、候选概念、双阶段验证和组织回流，推动一款饮品从机会到立项建议。",
+    "summary": "一个热门口味不等于值得立项；把用户吸引力、研发风险和品牌适配放在一起，看看下一步值不值得做。",
     "roles": ["recruiter", "judge", "collaborator"],
     "tags": ["多角色", "证据门禁", "版本回流"],
     "story": {
@@ -206,7 +206,7 @@
     "backupUrl": "https://misunderstanding-museum.vercel.app/",
     "status": "live",
     "stage": "跨文化表达",
-    "summary": "从一句被误解的话出发，比较语境、意图与文化差异，并把个人经历变成可策展的公共内容。",
+    "summary": "一句话字面没错，却让另一个人难受；把语境、意图和文化差异摆开，也让自己的经历成为一件展品。",
     "roles": ["recruiter", "judge", "user", "collaborator"],
     "tags": ["跨文化", "互动叙事", "UGC"],
     "story": {
