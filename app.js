@@ -48,10 +48,16 @@ function renderProject(project, index) {
   const article = fragment.querySelector('article');
   article.dataset.repo = project.repo;
   if (project.status === 'research') article.classList.add('is-research');
+  if (project.status === 'unavailable') article.classList.add('is-unavailable');
 
   fragment.querySelector('.card-index').textContent = String(index + 1).padStart(2, '0');
   fragment.querySelector('.card-stage').textContent = project.stage;
-  fragment.querySelector('.card-status').textContent = project.status === 'research' ? '研究记录' : '可体验';
+  const statusLabel = {
+    live: '可体验',
+    research: '研究记录',
+    unavailable: '暂不开放'
+  };
+  fragment.querySelector('.card-status').textContent = statusLabel[project.status];
   fragment.querySelector('h3').textContent = project.name;
   fragment.querySelector('.card-summary').textContent = project.summary;
   fragment.querySelector('.story-person').textContent = project.story.person;
@@ -62,7 +68,9 @@ function renderProject(project, index) {
   project.tags.forEach((tag) => tagList.append(makeTextElement('li', tag)));
 
   const actions = fragment.querySelector('.card-actions');
-  actions.append(actionLink(project.status === 'research' ? '查看研究路径 →' : '进入产品 →', project.primaryUrl, project.primaryUrl.startsWith('http')));
+  if (project.status !== 'unavailable') {
+    actions.append(actionLink(project.status === 'research' ? '查看研究路径 →' : '进入产品 →', project.primaryUrl, project.primaryUrl.startsWith('http')));
+  }
   if (project.sourceVisibility === 'public') actions.append(actionLink('公开源码 ↗', project.github, true));
 
   return fragment;

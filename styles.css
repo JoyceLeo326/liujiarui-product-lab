@@ -275,6 +275,7 @@ h1 em { color: var(--teal); font-style: normal; }
 .catalogue-meta p { margin: 0; }
 .status-dot { display: inline-block; width: 8px; height: 8px; margin: 0 5px 0 14px; border-radius: 50%; background: var(--teal); }
 .status-diamond { margin-left: 14px; color: var(--coral); }
+.status-paused { margin-left: 14px; color: var(--muted); }
 
 .project-grid { border-top: 1px solid var(--ink); }
 
@@ -291,6 +292,7 @@ h1 em { color: var(--teal); font-style: normal; }
 .card-topline { grid-column: 1 / -1; display: flex; gap: 12px; color: var(--muted); font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .card-status::before { content: "•"; margin-right: 12px; color: var(--teal); }
 .project-card.is-research .card-status::before { content: "◆"; color: var(--coral); }
+.project-card.is-unavailable .card-status::before { content: "—"; color: var(--muted); }
 .card-body h3 { margin: 0; font-family: "STSong", "Songti SC", serif; font-size: clamp(1.7rem, 2.4vw, 2.7rem); line-height: 1.05; }
 .card-summary { margin: 0; color: var(--muted); font-size: .92rem; }
 

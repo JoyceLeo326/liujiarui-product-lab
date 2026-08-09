@@ -1,4 +1,4 @@
-const CACHE_NAME = 'portfolio-lab-v1';
+const CACHE_NAME = 'portfolio-lab-v2';
 const SHELL = ['./', './index.html', './styles.css', './app.js', './projects.json', './favicon.svg', './manifest.webmanifest'];
 
 self.addEventListener('install', (event) => {

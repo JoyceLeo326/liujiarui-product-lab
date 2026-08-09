@@ -34,8 +34,21 @@ test('project catalogue is truthful, excludes YISHU, and covers every substantiv
     assert.match(project.github, /^https:\/\/github\.com\/JoyceLeo326\//);
     assert.ok(project.story?.person && project.story?.conflict && project.story?.outcome);
     assert.ok(Array.isArray(project.roles) && project.roles.length > 0);
-    assert.ok(['live', 'research'].includes(project.status));
+    assert.ok(['live', 'research', 'unavailable'].includes(project.status));
+    if (project.status === 'live') assert.ok(project.primaryUrl, `${project.repo} needs a live primary URL`);
+    if (project.status === 'unavailable') {
+      assert.equal(project.primaryUrl, '');
+      assert.equal(project.backupUrl, '');
+    }
   }
+
+  const byRepo = Object.fromEntries(projects.map((project) => [project.repo, project]));
+  assert.equal(byRepo['rural-teacher-assistant-deploy'].primaryUrl, 'https://rural-teacher-assistant-amber.vercel.app/');
+  assert.equal(byRepo['rural-teacher-assistant-deploy'].status, 'live');
+  assert.equal(byRepo['meituan-ai-route-planner'].primaryUrl, 'https://meituan-ai-route-planner.vercel.app/');
+  assert.equal(byRepo['meituan-ai-route-planner'].status, 'live');
+  assert.equal(byRepo['flowcut-ai-studio'].backupUrl, 'https://flowcut-ai-studio.vercel.app/');
+  assert.equal(byRepo['yuanqi-ai-innovation-engine'].sourceVisibility, 'public');
 });
 
 test('client rendering is safe and visitor roles change the catalogue', async () => {
@@ -44,6 +57,7 @@ test('client rendering is safe and visitor roles change the catalogue', async ()
   assert.match(script, /activeRole/);
   assert.match(script, /textContent/);
   assert.match(script, /createElement/);
+  assert.match(script, /unavailable/);
   assert.doesNotMatch(script, /innerHTML\s*=/);
   assert.doesNotMatch(script, /localStorage.*api|api.*localStorage/i);
 });
@@ -55,6 +69,6 @@ test('mainland-first shell uses local assets, responsive controls, and offline c
   assert.match(css, /min-height:\s*44px/);
   assert.match(css, /@media \(max-width:\s*768px\)/);
   assert.match(css, /prefers-reduced-motion/);
-  assert.match(sw, /portfolio-lab-v1/);
+  assert.match(sw, /portfolio-lab-v2/);
   assert.match(sw, /caches\.match/);
 });
