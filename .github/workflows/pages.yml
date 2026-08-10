@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm test
+      - run: npm run check
       - name: Reject accidental secrets and remote runtime assets
         shell: bash
         run: |
