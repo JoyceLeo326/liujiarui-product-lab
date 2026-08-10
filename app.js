@@ -116,5 +116,14 @@ async function loadProjects() {
 loadProjects();
 
 if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => undefined));
+  const workers = [
+    ['./sw.js', './'],
+    ['./products/route/sw.js', './products/route/'],
+    ['./products/rural/sw.js', './products/rural/']
+  ];
+  window.addEventListener('load', () => {
+    Promise.allSettled(
+      workers.map(([script, scope]) => navigator.serviceWorker.register(script, { scope }))
+    );
+  });
 }

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="路线规划">
+  <rect width="64" height="64" rx="16" fill="#ffc107"/>
+  <path d="M19 16a9 9 0 0 0-9 9c0 7 9 17 9 17s9-10 9-17a9 9 0 0 0-9-9Zm0 13a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z" fill="#1f2937"/>
+  <path d="M23 48h20c6 0 9-3 9-8s-3-8-9-8H32" fill="none" stroke="#1f2937" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 8"/>
+  <circle cx="47" cy="32" r="6" fill="#fff" stroke="#1f2937" stroke-width="4"/>
+</svg>

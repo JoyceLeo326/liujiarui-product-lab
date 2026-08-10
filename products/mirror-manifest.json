@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "digestAlgorithm": "sha256(path\\0bytes\\0)",
+  "products": {
+    "route": {
+      "sourceCommit": "b18be85fb067706b70acf44c14227c88ff27c79a",
+      "buildCommand": "npm run build:mirror",
+      "fileCount": 52,
+      "artifactSha256": "9027cd4ab3b3f43f0c08d4675d2e8be139bc31530bc60daf53b633087f20d029",
+      "securityGate": {
+        "historicalCandidateCount": 5,
+        "historicalExactMatches": 0,
+        "workflowPolicyFileHits": 0,
+        "highConfidenceFileHits": 0,
+        "gitleaksFindings": 0,
+        "gitleaksVersion": "8.30.1"
+      }
+    },
+    "rural": {
+      "sourceCommit": "71d06e85b311019433d332bb9194519b1af66862",
+      "buildCommand": "npm run build:mirror",
+      "fileCount": 87,
+      "artifactSha256": "3c2b6c18c06a192dbe3a83f30899ef0504505887ae740bbf49b4ec1b9910149f",
+      "securityGate": {
+        "historicalCandidateCount": 2,
+        "historicalExactMatches": 0,
+        "workflowPolicyFileHits": 0,
+        "highConfidenceFileHits": 0,
+        "gitleaksFindings": 0,
+        "gitleaksVersion": "8.30.1"
+      }
+    }
+  }
+}
