@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --test && node --check app.js && node --check sw.js"
+    "manifest:write": "node scripts/mirror-manifest.mjs --write",
+    "manifest:check": "node scripts/mirror-manifest.mjs --check",
+    "check": "npm run manifest:check && node --test && node --check app.js && node --check sw.js"
   }
 }

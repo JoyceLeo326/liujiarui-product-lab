@@ -1,34 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createHash } from 'node:crypto';
 import { access, readFile, readdir } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { buildMirrorManifest } from '../scripts/mirror-manifest.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (name) => readFile(path.join(root, name), 'utf8');
-
-async function listMirrorFiles(productRoot, directory = productRoot) {
-  const entries = await readdir(directory, { withFileTypes: true });
-  const files = [];
-  for (const entry of entries) {
-    const absolute = path.join(directory, entry.name);
-    if (entry.isDirectory()) files.push(...await listMirrorFiles(productRoot, absolute));
-    if (entry.isFile()) files.push(path.relative(productRoot, absolute).replaceAll('\\', '/'));
-  }
-  return files.sort((left, right) => left.localeCompare(right, 'en'));
-}
-
-async function digestMirror(productRoot, files) {
-  const digest = createHash('sha256');
-  for (const relative of files) {
-    digest.update(relative, 'utf8');
-    digest.update('\0');
-    digest.update(await readFile(path.join(productRoot, relative)));
-    digest.update('\0');
-  }
-  return digest.digest('hex');
-}
 
 test('portfolio starts from visitor intent and a real story path', async () => {
   const html = await read('index.html');
@@ -149,8 +127,10 @@ test('portfolio worker caches mirror entrypoints without serving HTML as failed 
 
 test('mirror manifest proves the checked artifacts without publishing source history', async () => {
   const manifest = JSON.parse(await read('products/mirror-manifest.json'));
+  const generated = await buildMirrorManifest();
   assert.equal(manifest.schemaVersion, 1);
-  assert.equal(manifest.digestAlgorithm, 'sha256(path\\0bytes\\0)');
+  assert.equal(manifest.digestAlgorithm, 'sha256(path\\0normalized-bytes\\0;text-crlf-to-lf)');
+  assert.deepEqual(manifest, generated);
 
   for (const [product, expectedCandidates] of [['route', 5], ['rural', 2]]) {
     const entry = manifest.products[product];
@@ -163,10 +143,8 @@ test('mirror manifest proves the checked artifacts without publishing source his
     assert.equal(entry.securityGate.gitleaksFindings, 0);
     assert.equal(entry.securityGate.gitleaksVersion, '8.30.1');
 
-    const productRoot = path.join(root, 'products', product);
-    const files = await listMirrorFiles(productRoot);
-    assert.equal(entry.fileCount, files.length);
-    assert.equal(entry.artifactSha256, await digestMirror(productRoot, files));
+    assert.ok(entry.fileCount > 0);
+    assert.match(entry.artifactSha256, /^[0-9a-f]{64}$/);
   }
 });
 
