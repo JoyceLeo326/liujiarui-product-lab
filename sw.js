@@ -1,5 +1,5 @@
-const CACHE_PREFIX = 'portfolio-lab-';
-const CACHE_NAME = `${CACHE_PREFIX}v3`;
+const CACHE_PREFIX = 'joyce-product-lab-';
+const CACHE_NAME = `${CACHE_PREFIX}v4`;
 const SHELL = [
   './',
   './index.html',

@@ -19,15 +19,17 @@ test('portfolio starts from visitor intent and a real story path', async () => {
   assert.doesNotMatch(html, /零成本|无需登录|评委模式|一键载入演示/);
 });
 
-test('project catalogue is truthful, excludes YISHU, and covers every substantive repository', async () => {
+test('project catalogue contains only the eleven public products and includes YISHU', async () => {
   const projects = JSON.parse(await read('projects.json'));
   const slugs = projects.map((project) => project.repo);
-  assert.equal(projects.length, 12);
+  assert.equal(projects.length, 11);
   assert.equal(new Set(slugs).size, projects.length);
-  assert.ok(!slugs.includes('translation-tech-agent-gui'));
+  assert.ok(slugs.includes('translation-tech-agent-gui'));
+  assert.ok(!slugs.includes('affective-computing-research'));
+  assert.ok(!slugs.includes('liujiarui-ai-manual'));
   for (const required of [
-    'meituan-mealmate-ai-demo', 'affective-computing-research', 'literature-workbench',
-    'meituan-ai-route-planner', 'liujiarui-ai-manual', 'rural-teacher-assistant-deploy',
+    'meituan-mealmate-ai-demo', 'literature-workbench', 'translation-tech-agent-gui',
+    'meituan-ai-route-planner', 'rural-teacher-assistant-deploy',
     'JianKangShouHuZhe', 'flowcut-ai-studio', 'workflow', 'zuocheng-ai-workflow',
     'yuanqi-ai-innovation-engine', 'misunderstanding-museum'
   ]) assert.ok(slugs.includes(required), `missing ${required}`);
@@ -56,6 +58,19 @@ test('project catalogue is truthful, excludes YISHU, and covers every substantiv
   assert.equal(byRepo['meituan-ai-route-planner'].status, 'live');
   assert.equal(byRepo['flowcut-ai-studio'].backupUrl, 'https://flowcut-ai-studio.vercel.app/');
   assert.equal(byRepo['yuanqi-ai-innovation-engine'].sourceVisibility, 'public');
+  assert.equal(byRepo['yuanqi-ai-innovation-engine'].primaryUrl, 'https://joyceleo326.github.io/yuanqi-ai-innovation-engine/');
+});
+
+test('public surface uses Joyce only and never exposes private-project routes', async () => {
+  const publicFiles = [
+    'README.md', 'index.html', 'app.js', 'styles.css', 'projects.json',
+    'manifest.webmanifest', 'sw.js', 'favicon.svg'
+  ];
+  const combined = (await Promise.all(publicFiles.map(read))).join('\n');
+  assert.doesNotMatch(combined, /刘佳锐|刘佳瑞|Liu\s*Jiarui|Jiarui\s*Liu|liujiarui|Jerry/i);
+  assert.doesNotMatch(combined, /affective-computing-research|情感计算|个人说明书|ai-manual/i);
+  assert.match(combined, /joyce-product-lab/);
+  assert.doesNotMatch(combined, /\.\/research\/affective|\.\/mirrors\/[^\s"']*ai-manual/i);
 });
 
 test('client rendering is safe and visitor roles change the catalogue', async () => {
@@ -74,9 +89,10 @@ test('mainland-first shell uses local assets, responsive controls, and offline c
   assert.doesNotMatch(html, /fonts\.googleapis|gstatic|unpkg|jsdelivr|cdnjs/);
   assert.match(html, /\.\/styles\.css/);
   assert.match(css, /min-height:\s*44px/);
+  assert.match(css, /nav a[\s\S]*min-width:\s*44px/);
   assert.match(css, /@media \(max-width:\s*768px\)/);
   assert.match(css, /prefers-reduced-motion/);
-  assert.match(sw, /CACHE_PREFIX\s*=\s*['"]portfolio-lab-/);
+  assert.match(sw, /CACHE_PREFIX\s*=\s*['"]joyce-product-lab-/);
   assert.match(sw, /startsWith\(CACHE_PREFIX\)/);
   assert.match(sw, /caches\.match/);
 });
@@ -114,7 +130,7 @@ test('private-source products ship local, subpath-safe mirrors', async () => {
 test('portfolio worker caches mirror entrypoints without serving HTML as failed assets', async () => {
   const sw = await read('sw.js');
   const app = await read('app.js');
-  assert.match(sw, /CACHE_NAME\s*=\s*`\$\{CACHE_PREFIX\}v3`/);
+  assert.match(sw, /CACHE_NAME\s*=\s*`\$\{CACHE_PREFIX\}v4`/);
   assert.match(sw, /\.\/products\/route\/index\.html/);
   assert.match(sw, /\.\/products\/rural\/index\.html/);
   assert.match(sw, /event\.request\.mode === 'navigate'/);

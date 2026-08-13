@@ -18,24 +18,6 @@
     }
   },
   {
-    "name": "情感计算研究路径",
-    "repo": "affective-computing-research",
-    "github": "https://github.com/JoyceLeo326/affective-computing-research",
-    "sourceVisibility": "private",
-    "primaryUrl": "./research/affective-computing/",
-    "backupUrl": "",
-    "status": "research",
-    "stage": "研究训练",
-    "summary": "第一次走进情感计算，论文和代码越看越多；这条路径帮学习者知道先验证什么、怎样留下证据。",
-    "roles": ["recruiter", "judge", "collaborator"],
-    "tags": ["情感计算", "可复现", "学习路径"],
-    "story": {
-      "person": "准备进入情感计算方向的本科生",
-      "conflict": "论文、代码和实验很多，却无法判断下一步最值得验证什么",
-      "outcome": "得到带证据、状态与复盘入口的研究路线"
-    }
-  },
-  {
     "name": "文径",
     "repo": "literature-workbench",
     "github": "https://github.com/JoyceLeo326/literature-workbench",
@@ -70,24 +52,6 @@
       "person": "只有半天时间、同行者节奏不同的旅行者",
       "conflict": "热门景点、路程、预算与体力不能全部最大化",
       "outcome": "得到可调整并能真正照着走的城市路线"
-    }
-  },
-  {
-    "name": "AI 时代个人说明书",
-    "repo": "liujiarui-ai-manual",
-    "github": "https://github.com/JoyceLeo326/liujiarui-ai-manual",
-    "sourceVisibility": "private",
-    "primaryUrl": "./mirrors/liujiarui-ai-manual/",
-    "backupUrl": "https://liujiarui-ai-manual.vercel.app/",
-    "status": "live",
-    "stage": "个人协作",
-    "summary": "第一次一起做事，不必靠猜：从擅长什么、怎样沟通到哪些边界需要提前说清，都能按场景找到。",
-    "roles": ["recruiter", "judge", "collaborator"],
-    "tags": ["个人品牌", "协作", "能力证据"],
-    "story": {
-      "person": "第一次与 Joyce 协作的同学、老师或团队",
-      "conflict": "简历能列经历，却很难说明怎样配合才能把事情做好",
-      "outcome": "得到按场景查看的协作方式与项目证据"
     }
   },
   {
@@ -186,7 +150,7 @@
     "repo": "yuanqi-ai-innovation-engine",
     "github": "https://github.com/JoyceLeo326/yuanqi-ai-innovation-engine",
     "sourceVisibility": "public",
-    "primaryUrl": "./mirrors/yuanqi-ai-innovation-engine/",
+    "primaryUrl": "https://joyceleo326.github.io/yuanqi-ai-innovation-engine/",
     "backupUrl": "https://yuanqi-ai-innovation-engine.vercel.app/",
     "status": "live",
     "stage": "新品创新",
@@ -215,6 +179,24 @@
       "person": "在另一种语言或文化里被一句话绊住的人",
       "conflict": "字面意思、说话意图和接收者经验出现偏差",
       "outcome": "得到多视角解释，并能贡献自己的误会展品"
+    }
+  },
+  {
+    "name": "译述",
+    "repo": "translation-tech-agent-gui",
+    "github": "https://github.com/JoyceLeo326/translation-tech-agent-gui",
+    "sourceVisibility": "public",
+    "primaryUrl": "https://joyceleo326.github.io/translation-tech-agent-gui/",
+    "backupUrl": "https://yishu-translation-studio.vercel.app/",
+    "status": "live",
+    "stage": "翻译审校",
+    "summary": "长文翻完并不等于交付完成；术语、语气和上下文要在同一处反复核对，最后带着可回看的修改记录一起交出去。",
+    "roles": ["recruiter", "judge", "user", "collaborator"],
+    "tags": ["翻译", "术语一致", "本地隐私"],
+    "story": {
+      "person": "需要把一份长文稳妥交给读者的翻译者",
+      "conflict": "准确、自然、术语一致和交付时间不能靠一次生成同时解决",
+      "outcome": "得到可以逐段审校、保留上下文并导出的译稿"
     }
   }
 ]
