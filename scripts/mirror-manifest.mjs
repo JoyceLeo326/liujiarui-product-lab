@@ -12,15 +12,12 @@ const textExtensions = new Set([
 
 const productMetadata = {
   route: {
-    sourceCommit: 'b18be85fb067706b70acf44c14227c88ff27c79a',
+    sourceCommit: '11f5f6da56bf52980352da0ed29a4413f3459757',
     buildCommand: 'npm run build:mirror',
     securityGate: {
-      historicalCandidateCount: 5,
-      historicalExactMatches: 0,
-      workflowPolicyFileHits: 0,
-      highConfidenceFileHits: 0,
-      gitleaksFindings: 0,
-      gitleaksVersion: '8.30.1'
+      currentTreeFindings: 0,
+      artifactFindings: 0,
+      historyScanMode: 'offline-only'
     }
   },
   rural: {
