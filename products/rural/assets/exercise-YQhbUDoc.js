@@ -1,1 +1,0 @@
-import{d as r}from"./index-DwDfJBa1.js";const o=e=>r.post("/exercise/generate",e),c=e=>r.get("/exercise/history",{params:e}),i=e=>r.get(`/exercise/${e}`),n=e=>r.delete(`/exercise/${e}`),x=(e,s="word")=>r.get(`/exercise/export/${e}`,{params:{format:s},responseType:"blob"});export{c as a,i as b,n as d,x as e,o as g};

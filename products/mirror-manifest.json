@@ -14,18 +14,15 @@
       "artifactSha256": "ab6dd4fb03303a47f97685f581e37865e438be1c036d272aa770c6c453b9036c"
     },
     "rural": {
-      "sourceCommit": "71d06e85b311019433d332bb9194519b1af66862",
+      "sourceCommit": "20400db1c7d2a4865bd29c476fd844a2cb3badd2",
       "buildCommand": "npm run build:mirror",
       "securityGate": {
-        "historicalCandidateCount": 2,
-        "historicalExactMatches": 0,
-        "workflowPolicyFileHits": 0,
-        "highConfidenceFileHits": 0,
-        "gitleaksFindings": 0,
-        "gitleaksVersion": "8.30.1"
+        "currentTreeFindings": 0,
+        "artifactFindings": 0,
+        "historyScanMode": "offline-only"
       },
       "fileCount": 87,
-      "artifactSha256": "caeb9cd1d191061d6cc1f20d56d232f2d69108c9805f55327a7c5323e0c1bbae"
+      "artifactSha256": "d9f8b250df1645362d5dbc682c5e03d0146de44be22e5049095ca9106b379f31"
     }
   }
 }
