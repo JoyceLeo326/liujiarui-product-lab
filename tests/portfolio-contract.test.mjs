@@ -172,6 +172,7 @@ test('mirror manifest proves the checked artifacts without publishing source his
 test('Pages CI runs the same full syntax gate as local verification', async () => {
   const workflow = await read('.github/workflows/pages.yml');
   assert.match(workflow, /- run: npm ci/);
+  assert.match(workflow, /- run: npx playwright install --with-deps chromium/);
   assert.match(workflow, /- run: npm run check/);
   assert.doesNotMatch(workflow, /- run: npm test/);
 });
