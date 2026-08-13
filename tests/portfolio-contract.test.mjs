@@ -148,21 +148,16 @@ test('mirror manifest proves the checked artifacts without publishing source his
   assert.equal(manifest.digestAlgorithm, 'sha256(path\\0normalized-bytes\\0;text-crlf-to-lf)');
   assert.deepEqual(manifest, generated);
 
-  for (const [product, expectedCandidates] of [['route', null], ['rural', 2]]) {
+  for (const product of ['route', 'rural']) {
     const entry = manifest.products[product];
     assert.ok(entry, `${product} needs a manifest entry`);
     assert.match(entry.sourceCommit, /^[0-9a-f]{40}$/);
     assert.equal(entry.buildCommand, 'npm run build:mirror');
-    if (expectedCandidates !== null) {
-      assert.equal(entry.securityGate.historicalCandidateCount, expectedCandidates);
-      assert.equal(entry.securityGate.historicalExactMatches, 0);
-      assert.equal(entry.securityGate.gitleaksFindings, 0);
-      assert.equal(entry.securityGate.gitleaksVersion, '8.30.1');
-    }
-    assert.equal(entry.securityGate.currentTreeFindings ?? 0, 0);
-    assert.equal(entry.securityGate.artifactFindings ?? 0, 0);
-    assert.equal(entry.securityGate.highConfidenceFileHits ?? 0, 0);
-    if (product === 'route') assert.equal(entry.securityGate.historyScanMode, 'offline-only');
+    assert.deepEqual(entry.securityGate, {
+      currentTreeFindings: 0,
+      artifactFindings: 0,
+      historyScanMode: 'offline-only'
+    });
 
     assert.ok(entry.fileCount > 0);
     assert.match(entry.artifactSha256, /^[0-9a-f]{64}$/);

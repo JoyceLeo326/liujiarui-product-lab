@@ -21,15 +21,12 @@ const productMetadata = {
     }
   },
   rural: {
-    sourceCommit: '71d06e85b311019433d332bb9194519b1af66862',
+    sourceCommit: '20400db1c7d2a4865bd29c476fd844a2cb3badd2',
     buildCommand: 'npm run build:mirror',
     securityGate: {
-      historicalCandidateCount: 2,
-      historicalExactMatches: 0,
-      workflowPolicyFileHits: 0,
-      highConfidenceFileHits: 0,
-      gitleaksFindings: 0,
-      gitleaksVersion: '8.30.1'
+      currentTreeFindings: 0,
+      artifactFindings: 0,
+      historyScanMode: 'offline-only'
     }
   }
 };
@@ -39,6 +36,9 @@ async function listFiles(productRoot, directory = productRoot) {
   const files = [];
   for (const entry of entries) {
     const absolute = path.join(directory, entry.name);
+    if (entry.isSymbolicLink()) {
+      throw new Error(`Mirror artifact must not contain symbolic links: ${path.relative(productRoot, absolute)}`);
+    }
     if (entry.isDirectory()) files.push(...await listFiles(productRoot, absolute));
     if (entry.isFile()) files.push(path.relative(productRoot, absolute).replaceAll('\\', '/'));
   }
