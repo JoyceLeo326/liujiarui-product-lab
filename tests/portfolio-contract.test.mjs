@@ -89,6 +89,7 @@ test('mainland-first shell uses local assets, responsive controls, and offline c
   assert.doesNotMatch(html, /fonts\.googleapis|gstatic|unpkg|jsdelivr|cdnjs/);
   assert.match(html, /\.\/styles\.css/);
   assert.match(css, /min-height:\s*44px/);
+  assert.match(css, /nav a[\s\S]*min-width:\s*44px/);
   assert.match(css, /@media \(max-width:\s*768px\)/);
   assert.match(css, /prefers-reduced-motion/);
   assert.match(sw, /CACHE_PREFIX\s*=\s*['"]joyce-product-lab-/);
