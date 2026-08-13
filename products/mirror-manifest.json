@@ -3,7 +3,7 @@
   "digestAlgorithm": "sha256(path\\0normalized-bytes\\0;text-crlf-to-lf)",
   "products": {
     "route": {
-      "sourceCommit": "11f5f6da56bf52980352da0ed29a4413f3459757",
+      "sourceCommit": "4e9db8d9f43dd307cc470019bd93c41fe7f461b1",
       "buildCommand": "npm run build:mirror",
       "securityGate": {
         "currentTreeFindings": 0,
@@ -11,7 +11,7 @@
         "historyScanMode": "offline-only"
       },
       "fileCount": 52,
-      "artifactSha256": "53912bfac1c406495cc7a8f98b97648d9fc822f7853ed2049f55bb2889a7e8e6"
+      "artifactSha256": "ab6dd4fb03303a47f97685f581e37865e438be1c036d272aa770c6c453b9036c"
     },
     "rural": {
       "sourceCommit": "71d06e85b311019433d332bb9194519b1af66862",
